@@ -32,6 +32,18 @@ describe('funcionalidade página de produtos', () => {
 
     })
 
+    it.only('deve adicionar produto ao carrinho através de custom commands', () => {
+        cy.addProduto('Argus All-Weather Tank', 'M', 'Gray', 3)
+        cy.get('.dropdown-toggle > .mini-cart-items').should('contain', 3)
+        cy.get('.woocommerce-message').should('contain', 3 + ' × “Argus All-Weather Tank” foram adicionados no seu carrinho.')
+    });
+
+    it.only('deve adicionar produto ao carrinho através de custom commands', () => {
+        cy.addProduto('Aero Daily Fitness Tee', 'XL', 'Yellow', 8)
+        cy.get('.dropdown-toggle > .mini-cart-items').should('contain', 8)
+        cy.get('.woocommerce-message').should('contain', 8 + ' × “Aero Daily Fitness Tee” foram adicionados no seu carrinho.')
+    });
+
     it('deve remover o produto ao carrinho', () => {
         var quantidade = 3
 
