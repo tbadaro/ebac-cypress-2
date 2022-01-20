@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://lojaebac.ebaconline.art.br/",
+    "ignoreTestFiles": [
+        "**/2-advanced-examples/*.js",
+        "**/1-getting-started/*.js"
+    ]
+}

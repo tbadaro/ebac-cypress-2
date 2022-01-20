@@ -1,0 +1,26 @@
+{
+  "name": "ebac-cypress-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbadaro/ebac-cypress-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbadaro/ebac-cypress-2/issues"
+  },
+  "homepage": "https://github.com/tbadaro/ebac-cypress-2#readme",
+  "dependencies": {
+    "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "cypress": "^9.3.1"
+  }
+}
